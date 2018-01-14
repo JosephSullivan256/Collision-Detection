@@ -28,4 +28,12 @@ public class Vec2 {
 	public float cross(Vec2 v) {
 		return x*v.y-y*v.x;
 	}
+	
+	public float magnitudeSquared() {
+		return dot(this);
+	}
+	
+	public float magnitude() {
+		return (float) Math.sqrt(magnitudeSquared());
+	}
 }
