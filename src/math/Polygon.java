@@ -21,4 +21,14 @@ public class Polygon {
 		
 		return new Polygon((Vec2[]) vertices.toArray());
 	}
+	
+	public Vec2[] getVertices(){
+		return vertices;
+	}
+	
+	public void translate(Vec2 v){
+		for(int i = 0; i < vertices.length; i++){
+			vertices[i]=vertices[i].plus(v);
+		}
+	}
 }

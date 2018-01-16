@@ -2,7 +2,7 @@ package math;
 
 public class Vec2 {
 	
-	private final float x, y;
+	public final float x, y;
 	
 	public Vec2(float x, float y){
 		this.x = x;
